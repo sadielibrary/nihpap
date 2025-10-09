@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Understanding the NIH Public Access Policy </title>
+  <meta name="description" content="This is an interactive tool to help researchers determine how their NIH-sponsored research publication will end up in PubMed Central.">
+  <link rel="stylesheet" media = "screen" href="style.css">
+  <link rel="stylesheet" media = "print" href="print.css">
+
+</head>
+<body> 
+<div class="content-wrapper"> 
+    <header class="banner"> 
+        <h1> NIH Public Access Policy </h1>
+        <h3> What are your next steps, author? </h3>
+    </header>
+    <nav> 
+        <h3> About the policy: </h3>
+    <p> The NIH Public Access Policy went into effect on July 1, 2025. This policy requires all NIH-funded research to be deposited publicly in PubMed Central upon publication. Researchers should check whether they are or their journal is responsible for depositing into PubMed Central.</p>
+    </nav>
+    <main> 
+        <div class="box"> 
+            <p> Insert stuff about the policy and journal info here.</p>
+            <iframe src="https://new-acc-space-2437.ispring.com/app/embed-player/1b8e6ace-a4a4-11f0-9220-b65dfaab7b2d" width="800" height="450" frameborder="0" border="0" scrolling="auto" allowtransparency="true" allowfullscreen="1" style="border: none; background-color: transparent;"></iframe>
+        </div>
+    </main>
+    <aside> 
+        <div><button onclick="event1()"> Author Accepted Manuscript </button></div>
+        <p id="manuscript"></p>
+        <div><button onclick="event3()"> Policy intention </button></div>
+        <p id="intention"></p>
+        <div> <a href="https://pmc.ncbi.nlm.nih.gov/about/intro/"> Read more about PubMed Central </a> </div>
+
+        <script> 
+            function event1() {
+                document.getElementById("manuscript").innerHTML ="The author’s final version that has been accepted for journal publication and includes all revisions resulting from the peer review process, including all associated tables, graphics, and supplemental material."
+            }
+
+            function event3() {
+                document.getElementById("intention").innerHTML ="Increasing access to publications resulting from National Institutes of Health (NIH) funding offers many benefits to the scientific community and the public who funded the underlying research. When patients, families, and healthcare providers can access published findings resulting from NIH funding, they are able to better understand and address the most critical health concerns facing their communities. It also allows researchers, students, and members of the public in all communities to have equitable access to such content."
+            }
+        </script>
+    </aside>
+    <footer> 
+        <p> contact us for more info </p>
+    </footer>
+</div>
+</body>

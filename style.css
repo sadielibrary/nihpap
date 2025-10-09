@@ -1,0 +1,61 @@
+
+/*------------------------------
+PAGE LAYOUT 
+------------------------------*/
+@media (min-width: 800px) {
+    .content-wrapper {
+        margin: 30 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-areas: "banner banner" "nav nav " "main aside" "footer footer";
+    }
+
+    .banner {
+        grid-area: banner; 
+    }
+
+    nav {
+        grid-area: nav;
+    }
+
+    aside {
+        grid-area: aside; 
+    }
+
+    main {
+        grid-area: main; 
+    }
+
+    footer {
+        grid-area: footer; 
+    }
+}
+/*--------------------------------
+END OF PAGE LAYOUT
+--------------------------------*/
+body {
+    font-family:sans-serif;
+}
+.banner {
+    text-align: center;
+    padding: 3em;
+}
+
+nav {
+    margin-left: 20px; 
+    margin-right: 20px; 
+}
+
+main {
+    padding: 3em;
+}
+
+aside {
+    padding: 3em;
+}
+
+.box {
+    max-width: 75%; 
+    height: auto;
+    border: 5px black 
+}
