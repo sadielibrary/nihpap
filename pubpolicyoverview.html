@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Understanding the NIH Public Access Policy </title>
+  <meta name="description" content="This is an interactive tool to help researchers determine how their NIH-sponsored research publication will end up in PubMed Central.">
+  <link rel="stylesheet" media = "screen" href="style.css">
+  <link rel="stylesheet" media = "print" href="print.css">
+
+</head>
+<body> 
+<div class="content-wrapper"> 
+    <header class="banner"> 
+        <h1> NIH Public Access Policy </h1>
+        <h3> What are your next steps, author? </h3>
+    </header>
+    <nav> 
+        <h3> About this webpage: </h3>
+        <div> <button> <a href="pubpolicyoverview.html"> Policy overview </a></button>
+        <button> <a href="index.html"> Full policy </a></button></div>
+    <p> This webpage imports text from the NIH Public Access Policy webpages, and highlights sections that are of particular importance to researchers. This webpage is intended to help researchers understand the Public Access Policy. To fully read the policy, we recommend viewing the NIH website. The NIH Public Access Policy went into effect on July 1, 2025. This policy requires all NIH-funded research to be deposited publicly in PubMed Central upon publication. Researchers should check whether they are or their journal is responsible for depositing into PubMed Central.</p>
+    </nav>
+    <main> 
+<div style="width: auto; height: 600px; overflow-y:scroll; background-color:#ebf3f9; padding:1em;">  
+                <h2>Public Access Policy Details</h2>
+<p> Increasing access to publications resulting from National Institutes of Health (NIH) funding offers many benefits to the scientific community and the public who funded the underlying research. When patients, families, and healthcare providers can access published findings resulting from NIH funding, they are able to better understand and address the most critical health concerns facing their communities. It also allows researchers, students, and members of the public in all communities to have equitable access to such content.</p>
+
+<p> To achieve these goals, the 2024 NIH Public Access Policy requires <span id="script"> Author Accepted Manuscripts </span> accepted for publication in a journal, on or after July 1, 2025, to be submitted to PubMed Central upon acceptance for publication, for public availability without embargo upon the Official Date of Publication.</p>
+
+<h2> Policy Details </h2>
+<p> The 2024 NIH Public Access Policy outlines key definitions, policy scope, and requirements. It also covers rights, costs, and compliance and enforcement. </p>
+<p>Cost guidance can be found in the Supplemental Guidance to the 2024 NIH Public Access Policy: Publication Costs.</p>
+<p> Guidance on the Government Use License and rights can be found in the Supplemental Guidance to the 2024 NIH Public Access Policy: Government Use License and Rights.</p>
+<h2> Additional Resources</h2>
+<p> The 2024 Policy replaces the 2008 NIH Public Access Policy. More information on the history of the development of the 2024 NIH Public Access Policy can be found on the Office of Science Policy’s Public Access page.</p>
+        </div> 
+        </main>
+    <aside> 
+        <h3> Important terms and sections </h3>
+        <div><button onclick="event1()"> Author Accepted Manuscript </button> <button onclick="event6(); event7()"> Display </button></div>
+        <p id="manuscript1"></p>
+        <br> 
+
+        <script> 
+            function event1() {
+                document.getElementById("manuscript1").innerHTML ="The author’s final version that has been accepted for journal publication and includes all revisions resulting from the peer review process, including all associated tables, graphics, and supplemental material."
+            }
+
+            function event6() {
+                document.getElementByID("script").style.color ="green";
+            }
+
+            function event7() {
+                document.getElementByID("script").scrollIntoView()
+            }
+        </script>
+    </aside>
+    <footer> 
+        <p> contact us for more info </p>
+    </footer>
+</div>
+</body>
+</html>
