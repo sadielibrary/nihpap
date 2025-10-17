@@ -7,7 +7,7 @@ PAGE LAYOUT
         margin: 30 auto;
         display: grid;
         grid-template-columns: 2fr 1fr; 
-        grid-template-areas: "banner banner" "nav nav " "main aside" "footer footer";
+        grid-template-areas: "banner banner banner" "nav nav nav " "main main aside" "footer footer footer";
     }
 
     .banner {
@@ -47,15 +47,47 @@ nav {
 }
 
 main {
-    padding: 3em;
+    padding-top: 3em; 
+    padding-bottom: 3em;
 }
 
 aside {
     padding: 3em;
 }
 
-.box {
-    max-width: 75%; 
-    height: auto;
-    border: 5px black 
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.container > div {
+    padding: 10px; 
+    text-align: center;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
